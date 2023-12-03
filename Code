@@ -1,0 +1,1175 @@
+--CREATING TABLE AND IMPORTING VALUES OF YEAR 2023
+
+create table trip_jan_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time time,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+
+create table trip_feb_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time time,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)	
+
+
+
+create table trip_mar_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time time,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)	
+
+
+
+
+create table trip_apr_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time time,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+create table trip_may_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time varchar,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+
+create table trip_june_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time time,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+create table trip_july_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time time,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+
+create table trip_aug_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time varchar,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+create table trip_sept_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time varchar,--time
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+create table trip_oct_23
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at varchar,	
+day_of_week int,
+ended_at varchar,
+ride_time varchar,--time
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+
+select * from trip_mar_23--
+select * from trip_jan_23
+select * from trip_feb_23
+select * from trip_apr_23--
+select * from trip_may_23
+select * from trip_june_23--
+select * from trip_july_23--
+select * from trip_aug_23--
+select * from trip_sept_23--
+select * from trip_oct_23--
+
+select * from trip_jan_23
+union all select * from  trip_feb_23
+
+select * from trip_jan_23
+union all select * from  trip_oct_23
+
+
+alter table trip_feb_23
+drop column ride_time
+
+alter table trip_feb_23
+column ride_time varchar
+
+drop table trip_feb_23
+
+ALTER TABLE trip_feb_23
+ALTER COLUMN   ride_time type varchar; 
+
+
+alter table trip_jan_23
+alter column ride_time type varchar
+
+ALTER TABLE trip_mar_23
+ALTER COLUMN   ride_time type varchar; 
+
+ALTER TABLE trip_apr_23
+ALTER COLUMN   ride_time type varchar; 
+
+ALTER TABLE trip_june_23
+ALTER COLUMN   ride_time type varchar; 
+
+ALTER TABLE trip_july_23
+ALTER COLUMN   ride_time type varchar; 
+
+ALTER TABLE trip_aug_23
+ALTER COLUMN   ride_time type varchar; 
+
+ALTER TABLE trip_sept_23
+ALTER COLUMN   ride_time type varchar; 
+
+ALTER TABLE trip_oct_23
+ALTER COLUMN   ride_time type varchar; 
+
+
+select count(*) from trip_jan_23 --190301
+select count(*) from trip_feb_23  --190445
+select count(*) from trip_mar_23 --258678
+select count(*) from trip_apr_23 --
+select count(*) from trip_june_23 
+select count(*) from trip_july_23 
+select count(*) from trip_aug_23 
+select count(*) from trip_sept_23 
+select count(*) from trip_oct_23 
+
+
+-- COMBINE ALL TABLES TO FORM ONE TABLE NAMED TRIPDATA_2023
+
+drop table trip_aug_23 
+
+drop table trip_sept_23 
+drop table trip_oct_23 
+
+alter table trip_oct_20 
+rename to trip_oct_23 */
+
+
+create table tripdata_2023 as
+			(
+			select * from trip_jan_23
+			union all 
+			select * from  trip_feb_23
+			union all
+			select * from trip_mar_23
+			union all 
+			select * from  trip_apr_23
+			union all
+			select * from  trip_may_23
+			union all
+			select * from trip_june_23
+			union all 
+			select * from  trip_july_23
+			union all
+			select * from trip_aug_23
+			union all 
+			select * from  trip_sept_23
+			union all
+			select * from trip_oct_23 
+			)
+
+
+--CREATION OF  TABLES AND IMPORTING DATA OF YEAR 2022
+
+create table trip_jan_22  -- january2022 to december 2022
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at timestamp,	
+ended_at timestamp,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+
+--COMBINING ALL THE MONTHS DATA OF 2022 TO ONE COLUMN
+
+create table tripdata_2022 as
+(
+select * from trip_jan_22
+union all
+select * from trip_feb_22
+union all
+select * from trip_mar_22
+union all
+select * from trip_apr_22
+union all
+select * from trip_may_22
+union all 
+select * from trip_june_22
+union all
+select * from trip_july_22
+union all
+select * from trip_aug_22
+union all
+select * from trip_sept_22
+union all
+select * from trip_oct_22
+union all
+select * from trip_nov_22
+union all
+select * from trip_dec_22
+)
+
+-- CREATE TABLE 2022 WITH TWO NEW ADDITIONAL CALCULATED COLUMNS 
+
+create table tripdata_2022 as
+(	
+     with udate_2022 as(
+        
+        			select * from trip_jan_22
+        			union all
+        			select * from trip_feb_22
+        			union all
+        			select * from trip_mar_22
+        			union all
+        			select * from trip_apr_22
+        			union all
+        			select * from trip_may_22
+        			union all 
+        			select * from trip_june_22
+        			union all
+        			select * from trip_july_22
+        			union all
+        			select * from trip_aug_22
+        			union all
+        			select * from trip_sept_22
+        			union all
+        			select * from trip_oct_22
+        			union all
+        			select * from trip_nov_22
+        			union all
+        			select * from trip_dec_22
+	                      )
+	select * ,age(ended_at,started_at)as ride_time,
+	extract(dow from started_at) as day_of_week 
+	from update_2022
+)
+
+select * from tripdata_2022
+
+select sum(ride_time) from tripdata_2022
+
+select avg(ride_time) from tripdata_2022
+
+-- CREATING TRIPDATA_2023 WITH TWO ADDITIONAL COLUMNS 
+
+drop table tripdata_2023
+
+create table tripdata_2023 as
+(	
+  with update_2023 as(
+      
+      			select * from trip_jan_23
+      			union all
+      			select * from trip_feb_23
+      			union all
+      			select * from trip_mar_23
+      			union all
+      			select * from trip_apr_23
+      			union all
+      			select * from trip_may_23
+      			union all 
+      			select * from trip_june_23
+      			union all
+      			select * from trip_july_23
+      			union all
+      			select * from trip_aug_23
+      			union all
+      			select * from trip_sept_23
+      			union all
+      			select * from trip_oct_23
+	              )
+	select * ,age(ended_at,started_at)as ride_time,
+	extract(dow from started_at) as day_of_week 
+	from cte
+)
+
+
+-- CREATION OF TABLES  AND IMPORTING DATA FOR YEAR 2021
+
+create table trip_jan_21  -- january to december 2021
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at timestamp,	
+ended_at timestamp,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+-- CREATE TABLE 2021 WITH TWO NEW ADDITIONAL CALCULATED COLUMNS 
+
+create table tripdata_2021 as
+(	
+     with data_2021 as(
+
+        			select * from trip_jan_21
+        			union all
+        			select * from trip_feb_21
+        			union all
+        			select * from trip_mar_21
+        			union all
+        			select * from trip_apr_21
+        			union all
+        			select * from trip_may_21
+        			union all 
+        			select * from trip_june_21
+        			union all
+        			select * from trip_july_21
+        			union all
+        			select * from trip_aug_21
+        			union all
+        			select * from trip_sept_21
+        			union all
+        			select * from trip_oct_21
+        		  union all
+        		  select * from trip_nov_21
+        		  union all
+              select * from trip_dec_21
+		 
+	            )
+	select * ,age(ended_at,started_at)as ride_time,
+	extract(dow from started_at) as day_of_week 
+	from data_2021
+)
+
+
+-- CREATION OF TABLES  AND IMPORTING DATA FOR YEAR 2020
+create table trip_jan_to_mar_20
+(
+ride_id	varchar,
+rideable_type varchar,	
+started_at timestamp,	
+ended_at timestamp,
+start_station_name varchar,
+start_station_id varchar,	
+end_station_name varchar,	
+end_station_id varchar,	
+start_lat float,	
+start_lng float,
+end_lat float, 
+end_lng	float, 
+member_casual text
+)
+
+drop table trip_mar_20
+
+-- CREATE TABLE 2020 WITH TWO NEW ADDITIONAL CALCULATED COLUMNS 
+
+create table tripdata_2020 as
+(	
+     with data as(
+
+      			select * from trip_jan_to_mar_20
+      			union all
+      			select * from trip_apr_21
+      			union all
+      			select * from trip_may_21
+      			union all 
+      			select * from trip_june_21
+      			union all
+      			select * from trip_july_21
+      			union all
+      			select * from trip_aug_21
+      			union all
+      			select * from trip_sept_21
+      			union all
+      			select * from trip_oct_21
+      		  union all
+      		  select * from trip_nov_21
+      		  union all
+            select * from trip_dec_21
+		 
+	            )
+	select * ,age(ended_at,started_at)as ride_time,
+	extract(dow from started_at) as day_of_week 
+	from data
+)
+
+
+--DATA CLEANING AND MANUPULATION
+
+--1) CHECK FOR NULL VALUES
+
+select * 
+from tripdata_2023
+where ride_id is null
+
+select * 
+from tripdata_2023
+where  member_casual is null
+
+
+select * 
+from tripdata_2023
+where  started_at is null or ended_at is null ;
+
+select * 
+from tripdata_2022
+where ride_id is null
+
+
+select * 
+from tripdata_2022
+where  member_casual is null
+
+
+
+select * 
+from tripdata_2022
+where  started_at is null or ended_at is null ;
+
+
+--0 result
+
+
+select * 
+from tripdata_2021
+where ride_id is null
+
+
+select * 
+from tripdata_2021
+where  member_casual is null
+
+
+select * 
+from tripdata_2021
+where  started_at is null or ended_at is null ;
+
+
+
+--0 result
+
+select * 
+from tripdata_2020
+where ride_id is null
+
+select * 
+from tripdata_2020
+where  member_casual is null
+
+
+select * 
+from tripdata_2020
+where  started_at is null or ended_at is null ;
+
+
+--0 result 
+
+
+select * 
+from tripdata_2019
+where trip_id is null
+
+
+select * 
+from tripdata_2019
+where  usertype is null
+
+
+select * 
+from tripdata_2019
+where  start_time is null or end_time is null ;
+
+
+-- 0 result
+
+
+select * 
+from tripdata_2018
+where trip_id is null
+
+
+select * 
+from tripdata_2018
+where usertype is null
+
+
+
+select * 
+from tripdata_2018
+where  start_time is null or end_time is null ;
+
+
+--0 result
+
+select distinct (week_day) from tripdata_2018
+
+--CHECKING FOR DISCTICT VALUES
+
+select ride_id ,count(1)
+from tripdata_2023
+group by ride_id
+having count(1) >1 ;
+
+
+
+select ride_id ,count(1)
+from tripdata_2022
+group by ride_id
+having count(1) >1 ;
+
+
+
+select ride_id ,count(1)
+from tripdata_2021
+group by ride_id
+having count(1) >1 ;
+
+
+select ride_id ,count(1)
+from tripdata_2020
+group by ride_id
+having count(1) >1 ;
+
+
+select trip_id ,count(1)
+from tripdata_2019
+group by trip_id
+having count(1) >1 ;
+
+select trip_id ,count(1)
+from tripdata_2018
+group by trip_id
+having count(1) >1 ;
+
+-- FINDING ND DELETING INVALID TIME DATA ( INVALID DTA IS THAT DATA IN WICH START_TIME IS GREATER THAN END_TIME) 
+
+select * 
+from tripdata_2018
+where start_time > end_time ;
+
+
+delete from tripdata_2018
+where start_time > end_time ;  --7 deleted
+
+
+delete from tripdata_2019
+where start_time > end_time ; --0 deleted
+
+delete from tripdata_2023
+where started_at > ended_at ; --198 deleted
+
+delete from tripdata_2022
+where started_at > ended_at ; --100 deleted
+
+delete from tripdata_2021
+where started_at > ended_at ; --147 deleted
+
+delete from tripdata_2020
+where started_at > ended_at ; --260 deleted
+
+--CALCULATIONS 
+
+--2023
+● Calculate the mean of ride_length --00:18:41.932597
+
+select avg(ride_time)
+from tripdata_2023
+
+● Calculate the max ride_length --2 mons 7 days 09:29:04
+
+select max(ride_time)
+from tripdata_2023
+
+● Calculate the mode of day_of_week   -- saturday 6
+
+
+with weekday as (
+		select day_of_week ,count(1)
+		, rank() over( order by count(1) desc)as rnk
+		from  tripdata_2023
+		group by day_of_week
+            )
+select day_of_week 
+from weekday
+where rnk =1 ;
+
+-- 0 for sunday 6 for saturday
+
+select * from tripdata_2023 
+select to_char(date'10/01/2023','day')
+
+--2022
+1) mean ride lenth =00:19:26.757016
+2) max ridr lenth = 28 days 17:47:15
+3)mod of day_of_week = saturday 6
+
+
+select avg(ride_time)
+from tripdata_2022
+
+select max(ride_time)
+from tripdata_2022
+
+
+with weekday as (
+		select day_of_week ,count(1)
+		, rank() over( order by count(1) desc)as rnk
+		from  tripdata_2022
+		group by day_of_week
+            )
+select day_of_week 
+from weekday
+where rnk =1 ;
+
+--2021
+1) mean ride lenth =00:21:56.189086
+2) max ridr lenth = 1 mon 8 days 20:24:09
+3)mod of day_of_week = saturday 6
+
+select avg(ride_time)
+from tripdata_2021
+
+select max(ride_time)
+from tripdata_2021
+
+
+with weekday as (
+		select day_of_week ,count(1)
+		, rank() over( order by count(1) desc)as rnk
+		from  tripdata_2021
+		group by day_of_week
+            )
+select day_of_week 
+from weekday
+where rnk =1 ;
+
+--2020
+1) mean ride lenth =00:22:00.325941
+2) max ride lenth =3 mons 17 days 15:30:24
+3)mod of day_of_week = saturday 6
+
+select avg(ride_time)
+from tripdata_2020
+
+select max(ride_time)
+from tripdata_2020
+
+
+with weekday as (
+		select day_of_week ,count(1)
+		, rank() over( order by count(1) desc)as rnk
+		from  tripdata_2020
+		group by day_of_week
+            )
+select day_of_week 
+from weekday
+where rnk =1 ;
+
+
+-- no of rides casual and members 
+
+select * from tripdata_2023
+select * from trip_sept_23
+
+select count(1) as no_of_rides ,
+member_casual
+from tripdata_2023
+group by
+member_casual
+order by 
+count(1) desc
+
+-- which bike type do riders ride most 
+
+select count(1) as no_of_rides ,
+rideable_type,
+member_casual
+from tripdata_2023
+group by
+member_casual,
+rideable_type
+order by 
+count(1) desc
+
+
+-- in which month the riders ride most .distribute casual and members
+
+select  extract('month' from started_at) as _month,
+count(1) as no_of_rides
+,member_casual
+from tripdata_2023
+group by 
+extract('month' from started_at) ,member_casual
+order by 
+count(1) desc
+
+
+
+--in which day of month the riders ride most
+select  extract('day' from started_at) as _month,
+count(1) as no_of_rides
+,member_casual
+from tripdata_2023
+group by 
+extract('day' from started_at) ,member_casual
+order by 
+count(1) desc
+
+-- day wise 
+select  to_char(started_at ,'day') as _month,
+count(1) as no_of_rides
+,member_casual
+from tripdata_2023
+group by 
+to_char( started_at,'day') ,member_casual
+order by 
+count(1) desc
+
+
+
+-- which bike type do riders like to ride in which months and days and in which part of day
+
+select rideable_type,count(1) 
+from tripdata_2023
+group by 
+rideable_type
+order by 2 desc
+
+select rideable_type ,
+member_casual,count(1) as no_of_riders
+from tripdata_2023
+group by 
+rideable_type, member_casual
+having rideable_type ='electric_bike'
+order by 3 desc
+
+select rideable_type ,
+member_casual,count(1) as no_of_riders
+from tripdata_2023
+group by 
+rideable_type, member_casual
+having rideable_type ='classic_bike'
+order by 3 desc
+
+
+select rideable_type ,
+member_casual,count(1) as no_of_riders
+from tripdata_2023
+group by 
+rideable_type, member_casual
+having rideable_type ='docked_bike'
+order by 3 desc
+
+-- all category with each bike type 
+
+select rideable_type ,
+member_casual,count(1) as no_of_riders
+from tripdata_2023
+group by 
+rideable_type, member_casual
+order by 3 desc
+
+
+-- in which part of day
+
+select rideable_type, 
+extract('hour' from started_at) as _hour,
+count(1),
+member_casual
+from tripdata_2023
+group by 
+rideable_type, extract('hour' from started_at), member_casual
+order by 3 desc
+
+
+
+-- in which month which bike is preffered
+select rideable_type ,
+ to_char (started_at ,'month') as month ,count(1) as no_of_riders,member_casual
+from tripdata_2023
+group by 
+rideable_type,to_char (started_at ,'month'),member_casual
+order by 3 desc
+
+-- CREATING A COMBINED TABLE CONTAINING DATA FROM YEAR 2020 TO YEAR 2023
+
+create table tripdata_20_to_23 as
+(
+
+			select * from tripdata_2023
+			union all
+			select * from tripdata_2022
+			union all
+			select * from tripdata_2021
+			union all 
+			select * from tripdata_2020
+)
+
+
+--DATA ANALYSIS 
+--QUESTIONS
+
+-- 1)TOTAL NUMBER OF RIDES OF CASUALS AND MEMBERS
+
+select member_casual ,count(1)
+from tripdata_20_to_23
+group by 
+member_casual
+order by 2 desc
+
+--RESULT
+
+"member"	12817396
+"casual"	9224958
+
+-- 2)WHICH BIKE TYPE DO RIDERS PREFER TO RIDE MOST  
+
+select rideable_type ,count(1)
+from tripdata_20_to_23
+group by 
+rideable_type
+order by 2 desc
+
+--RESULT
+
+"classic_bike"	11269071
+"electric_bike"	9485110
+"docked_bike"	1288173
+
+--3) PREFERRED RIDE TYPE DISTRIBUTED IN CASUALS AND MEMBERS
+
+select rideable_type ,member_casual,count(1)
+from tripdata_20_to_23
+group by 
+rideable_type,member_casual
+order by 2 desc
+
+--RESULT
+
+"classic_bike"	"member"	7089991
+"docked_bike"	"member"	378408
+"electric_bike"	"member"	5348997
+"classic_bike"	"casual"	4179080
+"docked_bike"	"casual"	909765
+"electric_bike"	"casual"	4136113
+
+--4) in which month of the year riders ride most .distribute casual and members
+
+select to_char(started_at,'month') as _month,count(1)
+from tripdata_20_to_23
+group by 
+to_char(started_at,'month')
+order by 2 desc
+
+--RESULT
+
+"july     "	3235886
+"august   "	3166196
+"june     "	2947983
+"september"	2879873
+"october  "	2358205
+"may      "	2302936
+"april    "	1472285
+"november "	1057544
+"march    "	914514
+"december "	676886
+"january  "	534787
+"february "	495259
+
+--DISTRIBUTION CASUAL AND MEMBERS
+
+select to_char(started_at,'month') as _month, member_casual,count(1)
+from tripdata_20_to_23
+group by 
+to_char(started_at,'month'),member_casual
+order by 2 desc
+
+--RESULT
+
+"april    "	"member"	925382
+"august   "	"member"	1670860
+"december "	"member"	492516
+"february "	"member"	407827
+"january  "	"member"	450357
+"july     "	"member"	1614400
+"june     "	"member"	1536357
+"march    "	"member"	650692
+"may      "	"member"	1274512
+"november "	"member"	743001
+"october  "	"member"	1457682
+"september"	"member"	1593810
+"april    "	"casual"	546903
+"august   "	"casual"	1495336
+"december "	"casual"	184370
+"february "	"casual"	87432
+"january  "	"casual"	84430
+"july     "	"casual"	1621486
+"june     "	"casual"	1411626
+"march    "	"casual"	263822
+"may      "	"casual"	1028424
+"november "	"casual"	314543
+"october  "	"casual"	900523
+
+
+
+--5) WHICH DAY OF MONTH RIDERS RIDE MOST
+
+select to_char(started_at,'day') as _month,count(1)
+from tripdata_20_to_23
+group by 
+to_char(started_at,'day')
+order by 2 desc
+
+--RESULT
+
+"saturday "	3666315
+"friday   "	3192310
+"sunday   "	3168244
+"thursday "	3094995
+"wednesday"	3066759
+"tuesday  "	3028741
+"monday   "	2824990
+
+
+-- DISTRIBUTION AMONG CASULAAND RIDERS
+
+select to_char(started_at,'day') as _month,member_casual,count(1)
+from tripdata_20_to_23
+group by 
+to_char(started_at,'day'),member_casual
+order by 1 ,3 desc
+
+--RESULT
+
+"friday   "	"member"	1846849
+"friday   "	"casual"	1345461
+"monday   "	"member"	1765666
+"monday   "	"casual"	1059324
+"saturday "	"casual"	1949725
+"saturday "	"member"	1716590
+"sunday   "	"casual"	1659014
+"sunday   "	"member"	1509230
+"thursday "	"member"	1972605
+"thursday "	"casual"	1122390
+"tuesday  "	"member"	1994139
+"tuesday  "	"casual"	1034602
+"wednesday"	"member"	2012317
+"wednesday"	"casual"	1054442
+
+
+-- IN WHICH MONTH WHICH BIKE IS PREFERED
+
+select to_char(started_at,'month') as _month, rideable_type,count(1)
+from tripdata_20_to_23
+group by 
+to_char(started_at,'month'),rideable_type
+order by  3 desc,1 desc
+
+
+"july     "	"classic_bike"	1749089
+"august   "	"classic_bike"	1747031
+"june     "	"classic_bike"	1590237
+"september"	"classic_bike"	1578034
+"july     "	"electric_bike"	1321922
+"august   "	"electric_bike"	1286755
+"may      "	"classic_bike"	1212120
+"september"	"electric_bike"	1211339
+"june     "	"electric_bike"	1208700
+"october  "	"electric_bike"	1185630
+"october  "	"classic_bike"	1114193
+"may      "	"electric_bike"	964609
+"april    "	"classic_bike"	765681
+"april    "	"electric_bike"	636173
+"november "	"electric_bike"	583813
+"november "	"classic_bike"	452627
+"march    "	"classic_bike"	394065
+"december "	"electric_bike"	390485
+"march    "	"electric_bike"	350112
+"december "	"classic_bike"	274620
+"january  "	"classic_bike"	207060
+"february "	"classic_bike"	184314
+"january  "	"electric_bike"	179038
+"march    "	"docked_bike"	170337
+"february "	"electric_bike"	166534
+"july     "	"docked_bike"	164875
+"june     "	"docked_bike"	149046
+"january  "	"docked_bike"	148689
+"february "	"docked_bike"	144411
+"august   "	"docked_bike"	132410
+"may      "	"docked_bike"	126207
+"september"	"docked_bike"	90500
+"april    "	"docked_bike"	70431
+"october  "	"docked_bike"	58382
+"november "	"docked_bike"	21104
+"december "	"docked_bike"	11781
+
+
+select to_char(started_at,'month') , rideable_type ,count(1)
+from tripdata_20_to_23
+group by 
+to_char(started_at,'month'),rideable_type
+having   
+order by 3
+
+-- PART OF THE DAY WHERE RIDES ARE MOST(HOUR WISE ) 
+
+select extract('hour' from started_at) as time_of_day,count(1)
+from tripdata_20_to_23
+group by 
+extract('hour' from started_at)
+order by 2 desc
+limit 10
+
+--TOP 10 RESULT
+
+17	2229008
+18	1891985
+16	1884015
+15	1536828
+19	1394753
+14	1351693
+13	1332782
+12	1307509
+11	1119507
+8	1050806
+
+
